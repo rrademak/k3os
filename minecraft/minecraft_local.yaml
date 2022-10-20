@@ -60,14 +60,18 @@ spec:
           requests:
             memory: 2Gi
         env:
-          - name:  EULA
-            value: 'TRUE'
-          - name: MODE
-            value: creative
-          - name: MOTD
-            value: k3os Minecraft server
-          - name: ALLOW_FLIGHT
-            value: 'TRUE'
+         - name: EULA
+           value: "TRUE"
+         - name: MODE
+           value: creative
+         - name: MOTD
+           value: k3os Minecraft server
+         - name: ALLOW_FLIGHT
+           value: "TRUE"
+         - name: MEMORY
+           value: 3G
+         - name: op-permission-level
+           value: "4"
         ports:
         - containerPort: 25565
           name: minecraft
